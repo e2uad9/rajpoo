@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>greatest website oat</title>
+</head>
+<body>
+
+  <h1>greatest website oat</h1>
+  
+  <img src="https://avatars.githubusercontent.com/u/96008219?height=180&v=4&width=180" alt="vecna" class="profile-img"/>
+
+  <div class="card">
+    <h1 style="color: #CC99FF;">karon sucks at coding</h1>
+    <p id="message" style="font-size: 24px; font-weight: bold; color: #ff69b4;">rajveer</p>
+
+    <button onclick="changeMessage()">Click Me</button>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+    <h3>Current Mood: poopy</h3>
+    <ul>
+      <li> rajveer likes Pizza!</li>
+      <li> go watch hsn's mamma mia!</li>
+    </ul>
+    <br>
+    <input type="text" placeholder="Type a secret message..." />
+  </div>
+
+  <div style="margin-top: 40px;">
+    <img src="https://d112y698adiu2z.cloudfront.net/photos/production/user_photos/002/895/662/datas/profile.png" alt="kavin" width= “100” height =”200”/>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrUaq0jdWn-TFmDQpxlTDbLPhaxRG-wRSyQ&s" alt="kavin" width= “100” height =”200”/>
+    
+    <div class="card" style="padding: 10px;">
+      <h3 style="margin: 10px;">kavin muthiah + adi varshney</h3>
+    </div>
+  </div>
+
+  <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkcWjI5IEovP47H-p8SIUz5WSka2S9vftmSYrn_1nZrE9Myo3ywE6UA-Axn_43V6l2gIScUUAx9h_KAghTFiSziMaoxg-IStl_dndGhwIUCGV_H8vS5AM1S4qw5pmZYVA94m4he984pQfNQJzkLJO8-6ayETw9QdT4sa9wCGIjndJGLXALp-M162Zt_I-77e3QzKbPSj8AXmwXj-Fn3euvxJiVy91Xq6CpWtcmg=w1280" alt="rajveer" class="profile-img"/>
+
+ 
+
+  <script>
+    function changeMessage() {
+      const messages = [
+        "yo stop putting me in the back",
+        "haha stupid idiot",
+        "poop",
+        "pizza time 🍕"
+      ];
+
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      document.getElementById("message").textContent = messages[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
