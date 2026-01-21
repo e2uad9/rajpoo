@@ -52,6 +52,9 @@ body {
   transform: rotate(5deg) scale(1.1); 
 }
 
+.img:hover {
+  transform: scale(1.1);
+
 
 button {
   background: linear-gradient(45deg, var(--pink), var(--purple));
@@ -90,4 +93,5 @@ input {
 
 input:focus {
   border-color: var(--pink);
+
 }
