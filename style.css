@@ -16,14 +16,12 @@ body {
   margin: 0;
 }
 
-/* Heading styles */
 h1 {
   font-size: 2.5rem;
   letter-spacing: -1px;
   text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
-/* The Glass Cards */
 .card {
   background: var(--glass);
   backdrop-filter: blur(10px); 
@@ -43,27 +41,16 @@ h1 {
   border-color: var(--purple);
 }
 
-.card-title {
-  color: var(--purple);
-}
+.card-title { color: var(--purple); }
+.card-message { font-size: 24px; font-weight: bold; color: #ff69b4; }
+.card-small { padding: 10px; margin-top: 10px; }
 
-.card-message {
-  font-size: 24px; 
-  font-weight: bold; 
-  color: #ff69b4;
-}
-
-.card-small {
-  padding: 10px;
-  margin-top: 10px;
-}
-
-/* Image Layout and Profile Pic */
 .image-container {
   margin-top: 40px;
   text-align: center;
 }
 
+/* PROFILE IMAGE (Circle) */
 .profile-img {
   width: 110px;
   height: 110px;
@@ -75,30 +62,35 @@ h1 {
   transition: 0.5s;
 }
 
-.profile-img:hover {
-  transform: rotate(5deg) scale(1.1); 
-}
+.profile-img:hover { transform: rotate(5deg) scale(1.1); }
 
-/* Original size images with hover effect */
+/* GENERAL IMAGE STYLE */
 .img {
-  max-width: 100%;
-  height: auto;
   transition: 0.5s;
-  border-radius: 10px;
   margin: 10px;
   cursor: pointer;
 }
 
-.img:hover {
-  transform: scale(1.1);
+/* SIZING FOR 2nd & 3rd IMAGE */
+.mid-size {
+  width: 200px;  /* You can change this to any size you want */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
-/* Inputs and UI Elements */
-.separator {
-  border: 0; 
-  border-top: 1px solid #eee; 
-  margin: 20px 0;
+/* BORDER FOR THE LAST IMAGE (matches profile-img style) */
+.last-img {
+  max-width: 100%; /* Keeps original width proportions */
+  height: auto;
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px var(--pink);
 }
+
+.img:hover { transform: scale(1.1); }
+
+.separator { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
 
 button {
   background: linear-gradient(45deg, var(--pink), var(--purple));
@@ -107,15 +99,11 @@ button {
   border-radius: 50px;
   color: #1a1a2e;
   font-weight: bold;
-  font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0 5px 15px rgba(204, 153, 255, 0.4);
   transition: all 0.2s ease;
 }
 
-button:active {
-  transform: scale(0.95); 
-}
+button:active { transform: scale(0.95); }
 
 input {
   background: rgba(0,0,0,0.2);
@@ -127,7 +115,4 @@ input {
   margin-top: 20px;
   outline: none;
 }
-
-input:focus {
-  border-color: var(--pink);
-}
+input:focus { border-color: var(--pink); }
