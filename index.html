@@ -12,33 +12,33 @@
   <img src="https://avatars.githubusercontent.com/u/96008219?height=180&v=4&width=180" alt="prathyush" class="profile-img"/>
 
   <div class="card">
-    <h1 style="color: #CC99FF;">karon sucks at coding</h1>
-    <p id="message" style="font-size: 24px; font-weight: bold; color: #ff69b4;">rajveer</p>
+    <h1 class="card-title">karon sucks at coding</h1>
+    <p id="message" class="card-message">rajveer</p>
 
     <button onclick="changeMessage()">Click Me</button>
 
-    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+    <hr class="separator">
 
     <h3>Current Mood: poopy</h3>
     <ul>
-      <li> rajveer likes Pizza!</li>
-      <li> go watch hsn's mamma mia!</li>
-      <li> kavin can you stop hating on me</li>
+      <li>rajveer likes Pizza!</li>
+      <li>go watch hsn's mamma mia!</li>
+      <li>kavin can you stop hating on me</li>
     </ul>
-    <br>
+    
     <input type="text" placeholder="Type a secret message..." />
   </div>
 
-  <div style="margin-top: 40px;">
-    <img src="https://d112y698adiu2z.cloudfront.net/photos/production/user_photos/002/895/662/datas/profile.png" alt="kavin" class="img" width= “100” height =”200”/>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrUaq0jdWn-TFmDQpxlTDbLPhaxRG-wRSyQ&s" alt="adi" class="img" width= “100” height =”200”/>
+  <div class="image-container">
+    <img src="https://d112y698adiu2z.cloudfront.net/photos/production/user_photos/002/895/662/datas/profile.png" alt="kavin" class="img"/>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrUaq0jdWn-TFmDQpxlTDbLPhaxRG-wRSyQ&s" alt="kavin" class="img"/>
     
-    <div class="card" style="padding: 10px;">
-      <h3 style="margin: 10px;">kavin muthiah + adi varshney</h3>
+    <div class="card card-small">
+      <h3>kavin muthiah + adi varshney</h3>
     </div>
   </div>
 
-    <img src="https://cdn.prod.website-files.com/616b94fd9c8d49a855204500/685ffbc9f39ada4a1eb11919_IMG_4152%20-%20Rajveer%20Dharkar-modified.png" alt="rajveer" class="img"/>
+  <img src="https://cdn.prod.website-files.com/616b94fd9c8d49a855204500/685ffbc9f39ada4a1eb11919_IMG_4152%20-%20Rajveer%20Dharkar-modified.png" alt="rajveer" class="img"/>
 
   <script>
     function changeMessage() {
@@ -48,17 +48,10 @@
         "poop",
         "pizza time 🍕"
       ];
-
       const randomIndex = Math.floor(Math.random() * messages.length);
       document.getElementById("message").textContent = messages[randomIndex];
     }
   </script>
 
 </body>
-
 </html>
-
-
-
-
-
