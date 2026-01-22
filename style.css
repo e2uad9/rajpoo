@@ -73,15 +73,18 @@ h1 {
   width: 200px; 
   height: 200px;
   object-fit: cover;
+  border-radius: 0;
 }
 
 .last-img {
-  max-width: 100%;
-  height: auto;
+  width: 500px;
+  height: 500px;
   border-radius: 50%; 
   border: 3px solid white;
-  border-radius: 15px;
+  object-fit: cover;
+  margin: 10px;
   box-shadow: 0 0 15px var(--pink);
+  transition: 0.5s;
 }
 
 .img:hover { transform: scale(1.1); }
@@ -112,6 +115,7 @@ input {
   outline: none;
 }
 input:focus { border-color: var(--pink); }
+
 
 
 
