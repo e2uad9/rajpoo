@@ -73,12 +73,12 @@ h1 {
   width: 200px; 
   height: 200px;
   object-fit: cover;
-  border-radius: 15px;
 }
 
 .last-img {
   max-width: 100%;
   height: auto;
+  border-radius: 50%; 
   border: 3px solid white;
   border-radius: 15px;
   box-shadow: 0 0 15px var(--pink);
@@ -112,5 +112,6 @@ input {
   outline: none;
 }
 input:focus { border-color: var(--pink); }
+
 
 
