@@ -51,8 +51,8 @@ h1 {
 }
 
 .profile-img {
-  width: 110px;
-  height: 110px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%; 
   border: 3px solid white;
   object-fit: cover;
@@ -63,7 +63,6 @@ h1 {
 
 .profile-img:hover { transform: rotate(5deg) scale(1.1); }
 
-/* GENERAL IMAGE STYLE */
 .img {
   transition: 0.5s;
   margin: 10px;
@@ -71,14 +70,14 @@ h1 {
 }
 
 .mid-size {
-  width: 200px;  /* You can change this to any size you want */
+  width: 200px; 
   height: 200px;
   object-fit: cover;
   border-radius: 15px;
 }
 
 .last-img {
-  max-width: 100%; /* Keeps original width proportions */
+  max-width: 100%;
   height: auto;
   border: 3px solid white;
   border-radius: 15px;
@@ -113,4 +112,5 @@ input {
   outline: none;
 }
 input:focus { border-color: var(--pink); }
+
 
